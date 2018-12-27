@@ -1,0 +1,28 @@
+﻿<Window x:Class="CSV2DataGrid.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CSV2DataGrid"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="1500">
+	<Grid>
+        <DataGrid Name="CustomerGrid" AlternatingRowBackground="Beige">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="customerNumber" Binding="{Binding customerNumber}"/>
+                <DataGridTextColumn Header="customerName" Binding="{Binding customerName}"/>
+                <DataGridTextColumn Header="contactLastName" Binding="{Binding contactLastName}"/>
+                <DataGridTextColumn Header="contactFirstName" Binding="{Binding contactFirstName}"/>
+                <DataGridTextColumn Header="phone" Binding="{Binding phone}"/>
+                <DataGridTextColumn Header="addressLine1" Binding="{Binding addressLine1}"/>
+                <DataGridTextColumn Header="addressLine2" Binding="{Binding addressLine2}"/>
+                <DataGridTextColumn Header="city" Binding="{Binding city}"/>
+                <DataGridTextColumn Header="state" Binding="{Binding state}"/>
+                <DataGridTextColumn Header="postalCode" Binding="{Binding postalCode}"/>
+                <DataGridTextColumn Header="country" Binding="{Binding country}"/>
+                <DataGridTextColumn Header="salesRepEmployeeNumber" Binding="{Binding salesRepEmployeeNumber}"/>
+                <DataGridTextColumn Header="creditLimit" Binding="{Binding creditLimit}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+	</Grid>
+</Window>
